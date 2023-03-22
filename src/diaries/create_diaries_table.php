@@ -20,10 +20,12 @@ function createTable($link) {
   CREATE TABLE diary (
       id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
       action VARCHAR(25),
-      time TIME NOT NULL,
+      startTime TIME NOT NULL,
+      endTime TIME NOT NULL,
       value INTEGER,
       created_at TIMESTAMP NOT NULL DEFAULT
     CURRENT_TIMESTAMP
+
       ) DEFAULT CHARACTER SET=utf8mb4;
 EOT;
   $result = mysqli_query($link,$createTableSql);
