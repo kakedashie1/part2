@@ -1,5 +1,5 @@
 
-    
+
 
     <h2 class="h3 text-dark mb-4">読書ログの登録</h2>
     <div>
@@ -25,3 +25,6 @@
     </div>
     <button type="submit" class="btn btn-primary" >登録する</button>
     </form>
+
+
+   
