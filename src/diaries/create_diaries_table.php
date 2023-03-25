@@ -19,7 +19,7 @@ function createTable($link) {
   $createTableSql = <<<EOT
   CREATE TABLE diary (
       id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
-      action VARCHAR(25),
+      action VARCHAR(100),
       startTime TIME NOT NULL,
       endTime TIME NOT NULL,
       value VARCHAR(10),

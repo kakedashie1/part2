@@ -7,10 +7,11 @@
     <?php foreach ($diaries as $diary) : ?>
       <section class="card shadow-sm mb-4">
         <div class="card-body">
-        <h2 class="card-title mb-4">
-        ・<?php echo escape($diary['action']); ?>
-        </h2>
+        <h2 class="mb-4">・行動</h2>
+        <p class="h3 mb-4"><?php echo escape($diary['action']); ?>
+</p>
         <div>
+        <h2 class="mb-4">・時間</h2>
         <p class="h3 mb-4">
         開始時間:  <?php echo $diary['startTime']; ?>&nbsp; ~ &nbsp;
           終了時間:  <?php echo $diary['endTime']; ?>
