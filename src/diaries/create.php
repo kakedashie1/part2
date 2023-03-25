@@ -72,6 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 }
+$title = '日記の登録';
+$content = 'views/form.php';
 
-
-include 'views/form.php';
+include 'views/layout.php';

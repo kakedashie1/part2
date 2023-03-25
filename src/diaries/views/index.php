@@ -7,17 +7,23 @@
     <?php foreach ($diaries as $diary) : ?>
       <section>
         <h2>
-          <?php echo $diary['action']; ?>
+          <?php echo escape($diary['action']); ?>
         </h2>
-        <h3>
-          <?php echo $diary['startTime']; ?>
-        </h3>
-        <h3>
-          <?php echo $diary['endTime']; ?>
-        </h3>
-        <h3>
+        <div>
+        <p>
+        開始時間:  <?php echo $diary['startTime']; ?>&nbsp; ~ &nbsp;
+          終了時間:  <?php echo $diary['endTime']; ?>
+
+        </p>
+
+        </div>
+
+        <h3>満足度</h3>
+          <p>
           <?php echo $diary['value']; ?>
-        </h3>
+
+          </p>
+
       </section>
     <?php endforeach ; ?>
     <?php else : ?>
@@ -25,4 +31,3 @@
 
     <?php endif ; ?>
   </main>
-
