@@ -22,7 +22,7 @@ function createTable($link) {
       action VARCHAR(25),
       startTime TIME NOT NULL,
       endTime TIME NOT NULL,
-      value INTEGER,
+      value VARCHAR(10),
       created_at TIMESTAMP NOT NULL DEFAULT
     CURRENT_TIMESTAMP
 

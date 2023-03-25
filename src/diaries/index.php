@@ -1,12 +1,23 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>日記一覧</title>
-</head>
-<body>
-  <h1>日記一覧</h1>
-</body>
-</html>
+<?php
+
+require_once __DIR__ . '/lib/mysqli.php';
+
+function listDiaries($link)
+{
+  $diaries = [];
+  $sql = 'SELECT action,startTime,endTime,value FROM diary;';
+  $results = mysqli_query($link,$sql);
+
+  while ($diary = mysqli_fetch_assoc($results))
+  {
+    $diaries[] = $diary;
+  }
+  mysqli_free_result($results);
+
+  return $diaries;
+}
+
+$link = dbConnect();
+$diaries = listDiaries($link);
+
+include  __DIR__ . '/views/index.php';
