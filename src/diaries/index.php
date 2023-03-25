@@ -20,4 +20,8 @@ function listDiaries($link)
 $link = dbConnect();
 $diaries = listDiaries($link);
 
-include  __DIR__ . '/views/index.php';
+$title = '日記の一覧';
+$content = __DIR__ . '/views/index.php';
+
+
+include __DIR__ . '/views/layout.php';
