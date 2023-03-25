@@ -18,16 +18,16 @@
     <?php endif; ?>
     <div>
       <label for="action">行動</label>
-      <input type="text" id="action" name="action" value="">
+      <input type="text" id="action" name="action" value="<?php echo $diary['action'] ?>">
     </div>
     <div>
       <p>
       <label for="">開始時間</label>
-      <input type="time" name="startTime">
+      <input type="time" name="startTime" value="<?php echo $diary['startTime'] ?>">
       </p>
       <p>
       <label for="">終了時間</label>
-      <input type="time" name="endTime">
+      <input type="time" name="endTime" value="<?php echo $diary['endTime'] ?>">
       </p>
 
 
@@ -35,11 +35,11 @@
     <div>
       <p>満足度<br>
       <label for="5">大満足</label>
-      <input type="radio"id="5" name="value" value="5" checked>
+      <input type="radio"id="5" name="value" value="5" >
       <label for="4">満足</label>
       <input type="radio" id="4" name="value" value="4">
       <label for="3">普通</label>
-      <input type="radio" id="3" name="value" value="3">
+      <input type="radio" id="3" name="value" value="3" checked>
       <label for="2">やや不満</label>
       <input type="radio" id="2" name="value" value="2">
       <label for="1">不満</label>
