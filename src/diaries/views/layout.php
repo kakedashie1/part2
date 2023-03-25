@@ -10,9 +10,9 @@
 <body>
 
   <div class="container">
-  <header>
-    <h1>
-      <a href="/diaries/index.php">日記</a>
+  <header class="mt-4 mb-4">
+    <h1 class="h2 text-dark mt-4 mb-4">
+      <a href="/diaries/index.php" class="text-body text-decoration-none">日記</a>
     </h1>
   </header>
     <?php include $content; ?>
