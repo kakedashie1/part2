@@ -18,6 +18,6 @@ COPY ./src /var/www/html
 COPY ./docker/app/php.ini /usr/local/etc/php/php.ini
 
 # Heroku で Apache2 が設定エラーになることへの対応
-# https://github.com/docker-library/wordpress/issues/293
+https://github.com/docker-library/wordpress/issues/293
 COPY ./docker/app/run-apache2.sh /usr/local/bin/
 CMD [ "run-apache2.sh" ]

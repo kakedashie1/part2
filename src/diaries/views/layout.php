@@ -10,7 +10,7 @@
 <body>
 
   <div class="container">
-  <header class="mt-4 mb-4">
+  <header class="navbar shadow-sm p-3 mb-5 bg-white">
     <h1 class="h2 text-dark mt-4 mb-4">
       <a href="/diaries/index.php" class="text-body text-decoration-none">日記</a>
     </h1>
